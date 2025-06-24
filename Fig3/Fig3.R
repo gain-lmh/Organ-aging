@@ -124,9 +124,9 @@ plot_grid_all <- function(plot_list, output_file) {
   ggsave(filename = output_file, plot = combined, height = 10, width = 14)
 }
 
-plot_grid_all(ridge_plots, "D:/AgingStudy/Figures/ridge_all_organ.pdf")
-plot_grid_all(cor_plots, "D:/AgingStudy/Figures/correlation_all_organ.pdf")
-plot_grid_all(bar_plots, "D:/AgingStudy/Figures/bar_all_organ.pdf")
+plot_grid_all(ridge_plots, "/home/data/t140311/Organ_aging/Figures/ridge_all_organ.pdf")
+plot_grid_all(cor_plots, "/home/data/t140311/Organ_aging/Figures/correlation_all_organ.pdf")
+plot_grid_all(bar_plots, "/home/data/t140311/Organ_aging/Figures/bar_all_organ.pdf")
 
 # Polar plot
 summary_data <- do.call(rbind, group_scores)
@@ -142,4 +142,4 @@ ggplot(summary_data, aes(x = Organ, y = x, fill = Group)) +
   theme_bw() +
   theme(axis.text.x = element_text(size = 13, color = "black"))
 
-ggsave("D:/AgingStudy/Figures/group_gene_gsea_polar.pdf", width = 9, height = 8)
+ggsave("/home/data/t140311/Organ_aging/Figures/group_gene_gsea_polar.pdf", width = 9, height = 8)
