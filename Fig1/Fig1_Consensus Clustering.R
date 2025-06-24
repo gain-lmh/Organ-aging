@@ -1,5 +1,5 @@
 ############################################
-# Functional NMF Clustering and Sankey Plot
+# Consensus Clustering
 ############################################
 
 rm(list = ls())
